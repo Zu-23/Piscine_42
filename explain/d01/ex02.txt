@@ -1,0 +1,10 @@
+#If you run find with exec, {} expands to the filename of each file or directory found with find (so that ls in your example gets every found filename as an argument - note that it calls ls or whatever other command you specify once for each file found).
+
+Semicolon ; ends the command executed by exec. It needs to be escaped with \ so that the shell you run find inside does not treat it as its own special character, but rather passes it to find.
+Using ; (semicolon) or + (plus sign) is mandatory in order to terminate the shell commands invoked by -exec/execdir.
+
+The difference between ; (semicolon) or + (plus sign) is how the arguments are passed into find's -exec/-execdir parameter.
+########################################################################
+basename prints file name NAME with any leading directory components removed. It can optionally also remove any trailing suffix.
+-s : Remove a trailing suffix SUFFIX, such as a file extension.
+##########################################################################

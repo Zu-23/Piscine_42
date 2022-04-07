@@ -1,0 +1,3 @@
+egrep = extended regex
+-i = case insensitive (doesnt give a shit)
+-o : output only the matched pattern

@@ -1,0 +1,6 @@
+git ls-files --ignored --exclude-standard;
+# Show other (i.e. untracked) files that are ignored because of patterns in any of the standard git exclusions. 
+meaning it also searches for the ignored files in the standard exclusions files aka gitignor
+-o: show untracked files
+-i: show only ignored files
+https://luisdalmolin.dev/blog/ignoring-files-in-git-without-gitignore/e
